@@ -9,7 +9,7 @@ Status: accepted. Modelled on InvokeAI's Model Manager (starter catalogue, insta
 - Tiers use the card's **total** memory (what it can run); free memory is a separate "close other programs" warning. Hardware is read with `nvidia-smi` so that looking does not create a CUDA context.
 - Switching: the render loop and the swap share `gen_lock`; the old model is unloaded and the GPU cache emptied before the new one loads; the cache directory is per key; `/img` answers 503 while no model is loaded and 409 for a key that is not the current one; the app clears its image store when the key changes.
 - Progress comes from huggingface_hub's own tqdm byte bar (`tqdm_class`); with hf_xet the files do not grow on disk until the end, so polling the folder shows nothing.
-- Not done: cancel, resume UI, gated models (Hugging Face token), URL / local-folder install, SDXL-Turbo and FLUX backends.
+- Not done: cancel, resume UI, gated models (Hugging Face token), URL / local-folder install.
 
 ## Addendum: user-tunable settings and models added from Hugging Face
 

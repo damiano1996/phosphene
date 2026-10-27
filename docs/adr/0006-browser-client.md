@@ -1,10 +1,10 @@
 # 6. The browser is the client; the engine serves it
 
-**Decision.** The user interface is a web page (`web/`), served by the engine on `http://127.0.0.1:8780/` and opened in the person's own browser. The Kotlin desktop app that came first was removed once the web client matched it ([0010](0010-remove-the-kotlin-app.md)). The page is plain ES modules with JSDoc (no build step); the pure logic (the world, the geometry, the recommender) lives in `web/js/core` with its tests
+**Decision.** The user interface is a web page (`web/`), served by the engine on `http://127.0.0.1:8780/` and opened in the person's own browser. The page is plain ES modules with JSDoc (no build step); the pure logic (the world, the geometry, the recommender) lives in `web/js/core` with its tests
 (`cd web && node --test`); screens use Preact + htm (one vendored file, `web/vendor`), the mosaic is drawn on a canvas.
 
-**Why.** Installing is then "start the engine": no JVM, no Gradle, and Windows, macOS and Linux share one interface (only the engine depends on the graphics card). The interface can
-be tested in a real browser (screenshots, clicks), which the desktop window could not on Wayland. A phone on the same network can use the same page. Contributors know the web.
+**Why.** Installing is then "start the engine": Windows, macOS and Linux share one interface (only the engine depends on the graphics card). The interface can
+be tested in a real browser (screenshots, clicks). A phone on the same network can use the same page. Contributors know the web.
 
 **How it stays safe.**
 - The server binds to 127.0.0.1 only. A page on another site could still reach it by pointing a name of its own at 127.0.0.1 (DNS rebinding), so only the `Host` values `127.0.0.1`,

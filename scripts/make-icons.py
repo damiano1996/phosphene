@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Draws the Phosphene logo: a sunflower spiral of 34 dots, warm at the centre and cold at the rim (the palette of the Android app's icon). The same design is the favicon,
+"""Draws the Phosphene logo: a sunflower spiral of 34 dots, warm at the centre and cold at the rim. The same design is the favicon,
 the logo in the page and the app icon. Writes web/logo.svg (transparent) and the PNG icons.
   python3 scripts/make-icons.py        (needs Pillow)"""
 import math, os

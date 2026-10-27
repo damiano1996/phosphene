@@ -19,6 +19,3 @@ First public state of the project.
 
 ### Installers
 - A launcher app (published for Linux as `.AppImage` and `.deb`; the Windows and macOS builds exist but wait for code signing) that installs Python, PyTorch and the engine with uv and starts it; the engine runs on NVIDIA (CUDA) and, experimentally, on Apple Silicon (MPS).
-
-### Removed
-- The Kotlin desktop app and library of the first prototype ([ADR 0010](docs/adr/0010-remove-the-kotlin-app.md)).

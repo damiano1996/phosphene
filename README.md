@@ -41,9 +41,9 @@ You drag over a mosaic that never ends. Every picture is made on the spot by an 
 
 All releases: [github.com/damiano1996/phosphene/releases](https://github.com/damiano1996/phosphene/releases).
 
-**Windows and macOS:** there is no installer yet. An unsigned installer is blocked or flagged by both systems, so it is not published until it is signed. The engine is written to run on both (Windows with an NVIDIA card; macOS with Apple Silicon), but neither has been tried yet. You can try [running from source](#run-from-source) and report what happens.
+**Windows and macOS:** no installer yet. The engine is written to run on both (Windows with an NVIDIA card; macOS with Apple Silicon) but has not been tried there. You can [run from source](#run-from-source) and report what happens.
 
-**What you need:** an NVIDIA graphics card with a recent driver (4 GB is enough for the small models). Windows and macOS have no installer yet (see above). About 10 GB of free disk for the install, plus the models you pick. A modern browser, tested in Chrome. You do not need Python, Node or uv: the installer brings what it needs.
+**What you need:** an NVIDIA graphics card with a recent driver (4 GB is enough for the small models). About 10 GB of free disk for the install, plus the models you pick. A modern browser, tested in Chrome. You do not need Python, Node or uv: the installer brings what it needs.
 
 ## Install and run
 
@@ -94,7 +94,26 @@ Phosphene downloads a model once, from its original source, the first time you c
  the screens; plain ES modules               models, downloads, the optional reader of pictures
 ```
 
-The mosaic is an endless spiral of cells. Each cell is a point on a map of 526 concepts (`atlas/`) plus a **seed** that also says which finer kind of the concept and which looks to ask for. A taste model (a Gaussian-process preference model fitted from your choices, sampled by Thompson sampling) decides what the next cells are. An optional small model reads the pictures, so the app learns from what a picture shows and not only from what was asked.
+The mosaic is an endless spiral of cells. Each cell is a point on a map of 526 concepts (`atlas/`) plus a **seed** that also says which finer kind of the concept and which looks to ask for. A taste model decides what the next cells are.
+
+### How it learns
+
+The recommender runs in the page, not on a server, and learns only from what you do:
+
+| You | It counts as |
+|---|---|
+| click a picture | a choice |
+| open it large | a stronger choice |
+| heart it | the strongest (un-hearting takes it back, it is not a dislike) |
+| cross it out ("not for me") | a negative |
+| rest on a picture | a weak one, only while you are really there (the camera is still, the page is visible, you touched it in the last 90 seconds) |
+
+- **What it learns about.** The concept, the finer kind (the Dolomites, not just "mountains"), the prompt style (photo, close-up, painting), and how a picture looks: brightness, contrast, colour, warmth, detail, symmetry, light and shadow. The looks are measured in your browser on a tiny copy, and only the numbers are kept. An optional small model can also read each picture and add words (golden hour, fog), so it learns from what a picture shows and not only from what was asked.
+- **The model.** A Gaussian-process preference model, fitted from "this one was chosen among these", and sampled by Thompson sampling: it draws a plausible taste from what it knows, so it follows what you like and still tries new things.
+- **A sliding window.** Only the last 120 signals count, and a signal counts less the newer ones there are and the older it is (half-life 14 days). A changed taste takes over, and a few odd picks do not overturn an old one.
+- **In the open.** Settings > "What it learned" shows the map of your taste, the looks and words it favours and every signal it rests on. You can forget a single signal, pause learning, export the data or forget it all. It is one JSON file on your computer.
+
+The numbers are in `web/js/core/tuning.js`, and the simulators in `web/tools/` show what a change does. The reasoning is in [ADR 0007](docs/adr/0007-learning-in-the-open.md).
 
 More: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), and what it builds on: [ADR 0009](docs/adr/0009-prior-art.md).
 

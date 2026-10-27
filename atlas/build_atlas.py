@@ -6,8 +6,7 @@
 Writes atlas.tsv and templates.json next to this file. Prompt embeddings are NOT written: they depend on the image model and are computed by the engine
 at first run. Append new categories at the end of concepts.py so existing concept ids keep their meaning.
 
-Status: the committed atlas.tsv came from the first prototype's build of this method. This script has not been re-run since: doing so changes atlas.tsv's version, and what people had learned
-is then set aside (see docs/EXTENDING.md)."""
+Re-running it changes atlas.tsv's version, and what people had learned is then set aside (see docs/EXTENDING.md)."""
 import hashlib
 import json
 import os

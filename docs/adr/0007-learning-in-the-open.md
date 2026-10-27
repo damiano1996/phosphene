@@ -18,8 +18,7 @@ painting: known from the seed). The style is steered: a new cell's seed is chose
 becomes more likely, never certain). Colour and composition are learned and shown but cannot be ordered from the engine yet (that would need prompt modifiers and re-encoding).
 
 **Consequences.** The user file grows with the window (about 5 KB per signal, so up to
-about 600 KB): the page saves it as an ordinary request (browsers refuse `keepalive` bodies above 64 KiB). Not done yet: image captioning for words about the pictures (see the discussion in the
-issue tracker), and showing which signals produced which recommendation.
+about 600 KB): the page saves it as an ordinary request (browsers refuse `keepalive` bodies above 64 KiB). Not done yet: showing which signals produced which recommendation.
 
 ## Addendum: an optional reader of pictures (words)
 
