@@ -1,0 +1,14 @@
+{
+  "name": "phosphene-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "lint": "npx --yes eslint@9 .",
+    "sim:discover": "node tools/simulate-discover.js",
+    "sim:facets": "node tools/simulate-facets.js",
+    "sim:concepts": "node tools/simulate.js"
+  },
+  "description": "The Phosphene web client: plain ES modules, no build step.",
+  "license": "Apache-2.0"
+}

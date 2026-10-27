@@ -1,0 +1,16 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'self'">
+<title>Phosphene</title>
+<style>
+  body { margin: 0; font: 15px system-ui, sans-serif; background: #111; color: #eee; display: flex; flex-direction: column; height: 100vh }
+  header { padding: 20px 24px 8px } h1 { margin: 0; font-weight: 600; font-size: 22px } p { margin: 6px 0 0; color: #aaa }
+  .bar { display: flex; gap: 10px; padding: 12px 24px; align-items: center }
+  button { font: inherit; padding: 9px 18px; border-radius: 8px; border: 0; background: #7aa2ff; color: #07122b; cursor: pointer } button.quiet { background: #2a2a2a; color: #eee } button:disabled { opacity: .4; cursor: default }
+  pre:empty { display: none }
+  pre { flex: 1; margin: 0 24px 20px; padding: 12px; background: #000; border-radius: 8px; overflow: auto; font: 12px ui-monospace, monospace; white-space: pre-wrap }
+</style>
+<header><h1>Phosphene</h1><p id="msg">…</p></header>
+<div class="bar"><button id="main"></button><button id="open" class="quiet" hidden>Open the page</button></div>
+<pre id="log"></pre>
+<script src="renderer.js"></script>

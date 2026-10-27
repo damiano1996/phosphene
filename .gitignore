@@ -1,0 +1,19 @@
+# secrets, per-user data and caches: never in the repo
+.token
+.dev-data/
+*.pt
+*.safetensors
+events/
+cache/
+model/
+# build output and environments
+build/
+!/launcher/build/
+.idea/
+.vscode/
+node_modules/
+.ruff_cache/
+.pytest_cache/
+engine/.venv/
+__pycache__/
+*.egg-info/

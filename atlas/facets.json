@@ -1,0 +1,1361 @@
+{
+ "variants": 4,
+ "nature": [
+  "landscapes",
+  "plants and forests",
+  "sky and weather",
+  "flowers",
+  "gardens and landscaping",
+  "sea life",
+  "mammals",
+  "birds",
+  "insects and fungi"
+ ],
+ "attributes": [
+  {
+   "id": "pale-rock",
+   "label": "Pale rock",
+   "group": "terrain",
+   "phrase": "pale limestone rock"
+  },
+  {
+   "id": "granite",
+   "label": "Dark granite",
+   "group": "terrain",
+   "phrase": "dark granite rock"
+  },
+  {
+   "id": "green-meadow",
+   "label": "Green meadows",
+   "group": "terrain",
+   "phrase": "lush green meadows"
+  },
+  {
+   "id": "snow",
+   "label": "Snow",
+   "group": "terrain",
+   "phrase": "fresh snow"
+  },
+  {
+   "id": "water",
+   "label": "Water",
+   "group": "terrain",
+   "phrase": "water"
+  },
+  {
+   "id": "sand",
+   "label": "Sand",
+   "group": "terrain",
+   "phrase": "sand"
+  },
+  {
+   "id": "forest",
+   "label": "Forest",
+   "group": "terrain",
+   "phrase": "dense forest"
+  },
+  {
+   "id": "ice",
+   "label": "Ice",
+   "group": "terrain",
+   "phrase": "blue ice"
+  },
+  {
+   "id": "volcanic",
+   "label": "Volcanic black",
+   "group": "terrain",
+   "phrase": "black volcanic rock"
+  },
+  {
+   "id": "golden-hour",
+   "label": "Golden hour",
+   "group": "light",
+   "phrase": "golden hour light"
+  },
+  {
+   "id": "blue-hour",
+   "label": "Blue hour",
+   "group": "light",
+   "phrase": "blue hour twilight"
+  },
+  {
+   "id": "overcast",
+   "label": "Overcast",
+   "group": "light",
+   "phrase": "soft overcast light"
+  },
+  {
+   "id": "fog",
+   "label": "Fog and mist",
+   "group": "light",
+   "phrase": "fog and mist"
+  },
+  {
+   "id": "night",
+   "label": "Night",
+   "group": "light",
+   "phrase": "at night"
+  },
+  {
+   "id": "harsh-sun",
+   "label": "Harsh sun",
+   "group": "light",
+   "phrase": "harsh bright sunlight"
+  },
+  {
+   "id": "dramatic-sky",
+   "label": "Dramatic sky",
+   "group": "light",
+   "phrase": "dramatic sky"
+  },
+  {
+   "id": "autumn",
+   "label": "Autumn",
+   "group": "season",
+   "phrase": "autumn colors"
+  },
+  {
+   "id": "winter",
+   "label": "Winter",
+   "group": "season",
+   "phrase": "winter"
+  },
+  {
+   "id": "spring",
+   "label": "Spring",
+   "group": "season",
+   "phrase": "spring"
+  },
+  {
+   "id": "storm",
+   "label": "Storm",
+   "group": "season",
+   "phrase": "stormy weather"
+  },
+  {
+   "id": "warm-palette",
+   "label": "Warm palette",
+   "group": "palette",
+   "phrase": "warm color palette"
+  },
+  {
+   "id": "cool-palette",
+   "label": "Cool palette",
+   "group": "palette",
+   "phrase": "cool color palette"
+  },
+  {
+   "id": "pastel",
+   "label": "Pastel",
+   "group": "palette",
+   "phrase": "pastel colors"
+  },
+  {
+   "id": "vivid",
+   "label": "Vivid colour",
+   "group": "palette",
+   "phrase": "vivid saturated colors"
+  },
+  {
+   "id": "monochrome",
+   "label": "Monochrome",
+   "group": "palette",
+   "phrase": "monochrome"
+  },
+  {
+   "id": "aerial",
+   "label": "From above",
+   "group": "composition",
+   "phrase": "aerial view from above"
+  },
+  {
+   "id": "wide",
+   "label": "Wide view",
+   "group": "composition",
+   "phrase": "wide angle view"
+  },
+  {
+   "id": "close-up",
+   "label": "Close-up",
+   "group": "composition",
+   "phrase": "close-up macro"
+  },
+  {
+   "id": "reflection",
+   "label": "Reflections",
+   "group": "composition",
+   "phrase": "mirror reflections"
+  },
+  {
+   "id": "minimal",
+   "label": "Minimal",
+   "group": "composition",
+   "phrase": "minimalist composition"
+  }
+ ],
+ "curated": {
+  "snowy mountains": [
+   {
+    "phrase": "the Dolomites at sunrise, pale limestone peaks",
+    "attrs": [
+     "pale-rock",
+     "golden-hour",
+     "wide"
+    ]
+   },
+   {
+    "phrase": "jagged dark granite peaks covered in fresh snow",
+    "attrs": [
+     "granite",
+     "snow",
+     "dramatic-sky"
+    ]
+   },
+   {
+    "phrase": "green alpine meadows below snowy peaks, spring flowers",
+    "attrs": [
+     "green-meadow",
+     "snow",
+     "spring"
+    ]
+   }
+  ],
+  "desert dunes": [
+   {
+    "phrase": "red sand dunes at sunset with long shadows",
+    "attrs": [
+     "sand",
+     "golden-hour",
+     "warm-palette"
+    ]
+   },
+   {
+    "phrase": "pale wind-rippled dunes, minimal and quiet",
+    "attrs": [
+     "sand",
+     "pastel",
+     "minimal"
+    ]
+   },
+   {
+    "phrase": "desert dunes under a starry night sky",
+    "attrs": [
+     "sand",
+     "night"
+    ]
+   }
+  ],
+  "a canyon": [
+   {
+    "phrase": "a red sandstone slot canyon with a beam of light",
+    "attrs": [
+     "warm-palette",
+     "harsh-sun"
+    ]
+   },
+   {
+    "phrase": "a vast layered canyon seen from above",
+    "attrs": [
+     "aerial",
+     "wide"
+    ]
+   },
+   {
+    "phrase": "a canyon with a green river in autumn",
+    "attrs": [
+     "water",
+     "autumn"
+    ]
+   }
+  ],
+  "a volcano": [
+   {
+    "phrase": "an erupting volcano glowing at night",
+    "attrs": [
+     "night",
+     "volcanic",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "a snow-capped volcano above a green lake",
+    "attrs": [
+     "snow",
+     "water",
+     "green-meadow"
+    ]
+   },
+   {
+    "phrase": "a black volcanic crater in fog",
+    "attrs": [
+     "volcanic",
+     "fog"
+    ]
+   }
+  ],
+  "a glacier": [
+   {
+    "phrase": "a blue ice cave inside a glacier",
+    "attrs": [
+     "ice",
+     "cool-palette"
+    ]
+   },
+   {
+    "phrase": "a glacier meeting the sea with icebergs",
+    "attrs": [
+     "ice",
+     "water"
+    ]
+   },
+   {
+    "phrase": "a glacier seen from above with deep crevasses",
+    "attrs": [
+     "ice",
+     "aerial"
+    ]
+   }
+  ],
+  "a waterfall": [
+   {
+    "phrase": "a tall waterfall in a lush green rainforest",
+    "attrs": [
+     "forest",
+     "water",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "a wide waterfall in Iceland with dark basalt cliffs",
+    "attrs": [
+     "volcanic",
+     "water",
+     "overcast"
+    ]
+   },
+   {
+    "phrase": "a small waterfall over mossy rocks, silky long exposure",
+    "attrs": [
+     "water",
+     "close-up",
+     "forest"
+    ]
+   }
+  ],
+  "a lake at dawn": [
+   {
+    "phrase": "a mirror-calm mountain lake at dawn with a perfect reflection",
+    "attrs": [
+     "reflection",
+     "water",
+     "golden-hour"
+    ]
+   },
+   {
+    "phrase": "a misty lake with a wooden pier",
+    "attrs": [
+     "fog",
+     "water"
+    ]
+   },
+   {
+    "phrase": "a turquoise alpine lake surrounded by pines",
+    "attrs": [
+     "water",
+     "forest",
+     "vivid"
+    ]
+   }
+  ],
+  "a beach at sunset": [
+   {
+    "phrase": "a tropical beach with palm trees at sunset",
+    "attrs": [
+     "sand",
+     "golden-hour",
+     "warm-palette"
+    ]
+   },
+   {
+    "phrase": "a wild rocky beach with crashing waves under a stormy sky",
+    "attrs": [
+     "storm",
+     "dramatic-sky",
+     "water"
+    ]
+   },
+   {
+    "phrase": "an empty white sand beach seen from above, turquoise water",
+    "attrs": [
+     "aerial",
+     "sand",
+     "pastel"
+    ]
+   }
+  ],
+  "the northern lights": [
+   {
+    "phrase": "a green aurora over a snowy forest",
+    "attrs": [
+     "night",
+     "snow",
+     "forest"
+    ]
+   },
+   {
+    "phrase": "a purple and pink aurora over a frozen lake",
+    "attrs": [
+     "night",
+     "ice",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "an aurora above a lone cabin, wide starry sky",
+    "attrs": [
+     "night",
+     "wide"
+    ]
+   }
+  ],
+  "rolling green hills": [
+   {
+    "phrase": "rolling green hills with one lone tree in spring",
+    "attrs": [
+     "green-meadow",
+     "spring",
+     "minimal"
+    ]
+   },
+   {
+    "phrase": "misty green hills at sunrise",
+    "attrs": [
+     "fog",
+     "golden-hour",
+     "green-meadow"
+    ]
+   },
+   {
+    "phrase": "Tuscan hills with cypress trees in golden light",
+    "attrs": [
+     "warm-palette",
+     "golden-hour"
+    ]
+   }
+  ],
+  "an african savanna": [
+   {
+    "phrase": "an acacia tree on the savanna at sunset",
+    "attrs": [
+     "golden-hour",
+     "warm-palette"
+    ]
+   },
+   {
+    "phrase": "a dry savanna with a herd of elephants",
+    "attrs": [
+     "harsh-sun",
+     "warm-palette"
+    ]
+   },
+   {
+    "phrase": "a green savanna after rain under dramatic clouds",
+    "attrs": [
+     "green-meadow",
+     "dramatic-sky",
+     "storm"
+    ]
+   }
+  ],
+  "cliffs by the sea": [
+   {
+    "phrase": "white chalk cliffs above turquoise water",
+    "attrs": [
+     "pale-rock",
+     "water",
+     "pastel"
+    ]
+   },
+   {
+    "phrase": "dark sea cliffs with waves crashing, stormy sky",
+    "attrs": [
+     "granite",
+     "storm",
+     "dramatic-sky"
+    ]
+   },
+   {
+    "phrase": "green cliffs with a lighthouse at sunrise",
+    "attrs": [
+     "green-meadow",
+     "golden-hour"
+    ]
+   }
+  ],
+  "a salt flat": [
+   {
+    "phrase": "a mirror salt flat reflecting the sky",
+    "attrs": [
+     "reflection",
+     "wide",
+     "minimal"
+    ]
+   },
+   {
+    "phrase": "a cracked white salt flat seen from above",
+    "attrs": [
+     "aerial",
+     "monochrome"
+    ]
+   },
+   {
+    "phrase": "a salt flat at sunset under a pink sky",
+    "attrs": [
+     "golden-hour",
+     "pastel"
+    ]
+   }
+  ],
+  "a cave": [
+   {
+    "phrase": "a glowing blue sea cave",
+    "attrs": [
+     "water",
+     "cool-palette"
+    ]
+   },
+   {
+    "phrase": "a cave with stalactites lit by a torch",
+    "attrs": [
+     "warm-palette",
+     "night"
+    ]
+   },
+   {
+    "phrase": "a cave entrance with ferns and beams of light",
+    "attrs": [
+     "forest",
+     "harsh-sun"
+    ]
+   }
+  ],
+  "a rainforest river": [
+   {
+    "phrase": "a winding river through dense rainforest seen from above",
+    "attrs": [
+     "aerial",
+     "forest",
+     "water"
+    ]
+   },
+   {
+    "phrase": "a misty rainforest river at dawn",
+    "attrs": [
+     "fog",
+     "forest",
+     "water"
+    ]
+   },
+   {
+    "phrase": "a tropical river with rapids in bright sunlight",
+    "attrs": [
+     "water",
+     "harsh-sun",
+     "vivid"
+    ]
+   }
+  ],
+  "a fjord": [
+   {
+    "phrase": "a fjord with steep green cliffs and a small boat",
+    "attrs": [
+     "green-meadow",
+     "water"
+    ]
+   },
+   {
+    "phrase": "a snowy fjord in winter at blue hour",
+    "attrs": [
+     "winter",
+     "snow",
+     "blue-hour"
+    ]
+   },
+   {
+    "phrase": "a misty fjord with a waterfall",
+    "attrs": [
+     "fog",
+     "water"
+    ]
+   }
+  ],
+  "an old oak tree": [
+   {
+    "phrase": "a lone old oak tree in a golden field",
+    "attrs": [
+     "golden-hour",
+     "warm-palette",
+     "minimal"
+    ]
+   },
+   {
+    "phrase": "an old oak tree in autumn with fallen leaves",
+    "attrs": [
+     "autumn",
+     "warm-palette"
+    ]
+   },
+   {
+    "phrase": "a gnarled old oak tree in fog",
+    "attrs": [
+     "fog",
+     "monochrome"
+    ]
+   }
+  ],
+  "palm trees": [
+   {
+    "phrase": "palm trees on a white beach with turquoise water",
+    "attrs": [
+     "sand",
+     "water",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "palm trees in silhouette at sunset",
+    "attrs": [
+     "golden-hour",
+     "warm-palette"
+    ]
+   },
+   {
+    "phrase": "palm trees seen from below against a blue sky",
+    "attrs": [
+     "harsh-sun",
+     "vivid"
+    ]
+   }
+  ],
+  "a bamboo forest": [
+   {
+    "phrase": "a bamboo forest path with beams of sunlight",
+    "attrs": [
+     "forest",
+     "golden-hour"
+    ]
+   },
+   {
+    "phrase": "a misty bamboo forest",
+    "attrs": [
+     "fog",
+     "forest"
+    ]
+   },
+   {
+    "phrase": "bamboo seen from below, a green canopy",
+    "attrs": [
+     "forest",
+     "green-meadow",
+     "close-up"
+    ]
+   }
+  ],
+  "ferns": [
+   {
+    "phrase": "ferns unfurling, a close-up",
+    "attrs": [
+     "close-up",
+     "forest"
+    ]
+   },
+   {
+    "phrase": "a forest floor of ferns in sunbeams",
+    "attrs": [
+     "forest",
+     "golden-hour"
+    ]
+   },
+   {
+    "phrase": "ferns covered in morning dew",
+    "attrs": [
+     "close-up",
+     "fog"
+    ]
+   }
+  ],
+  "moss on a rock": [
+   {
+    "phrase": "moss on a rock in a stream",
+    "attrs": [
+     "water",
+     "forest"
+    ]
+   },
+   {
+    "phrase": "bright green moss, macro",
+    "attrs": [
+     "close-up",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "moss in a misty forest",
+    "attrs": [
+     "fog",
+     "forest"
+    ]
+   }
+  ],
+  "an autumn forest": [
+   {
+    "phrase": "an autumn forest with red and orange maples",
+    "attrs": [
+     "autumn",
+     "warm-palette",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "a golden birch forest in autumn",
+    "attrs": [
+     "autumn",
+     "golden-hour"
+    ]
+   },
+   {
+    "phrase": "an autumn forest path in fog",
+    "attrs": [
+     "autumn",
+     "fog"
+    ]
+   }
+  ],
+  "a snowy pine forest": [
+   {
+    "phrase": "a snowy pine forest at blue hour",
+    "attrs": [
+     "winter",
+     "snow",
+     "blue-hour"
+    ]
+   },
+   {
+    "phrase": "frosted pine trees in fog",
+    "attrs": [
+     "winter",
+     "fog",
+     "monochrome"
+    ]
+   },
+   {
+    "phrase": "a pine forest in snow with a golden sunrise glow",
+    "attrs": [
+     "winter",
+     "snow",
+     "golden-hour"
+    ]
+   }
+  ],
+  "mangroves": [
+   {
+    "phrase": "mangrove roots in clear shallow water",
+    "attrs": [
+     "water",
+     "forest"
+    ]
+   },
+   {
+    "phrase": "mangroves at sunset, reflections",
+    "attrs": [
+     "golden-hour",
+     "reflection"
+    ]
+   },
+   {
+    "phrase": "a mangrove forest seen from above",
+    "attrs": [
+     "aerial",
+     "forest",
+     "water"
+    ]
+   }
+  ],
+  "a baobab tree": [
+   {
+    "phrase": "a baobab tree at sunset",
+    "attrs": [
+     "golden-hour",
+     "warm-palette"
+    ]
+   },
+   {
+    "phrase": "baobab trees under a starry sky",
+    "attrs": [
+     "night"
+    ]
+   },
+   {
+    "phrase": "a baobab avenue in dust and light",
+    "attrs": [
+     "harsh-sun",
+     "warm-palette"
+    ]
+   }
+  ],
+  "a tropical jungle": [
+   {
+    "phrase": "a dense jungle with a hidden waterfall",
+    "attrs": [
+     "forest",
+     "water",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "a jungle canopy seen from above in mist",
+    "attrs": [
+     "aerial",
+     "fog",
+     "forest"
+    ]
+   },
+   {
+    "phrase": "a jungle with golden sunbeams",
+    "attrs": [
+     "forest",
+     "golden-hour"
+    ]
+   }
+  ],
+  "a redwood forest": [
+   {
+    "phrase": "tall redwoods with sunbeams",
+    "attrs": [
+     "forest",
+     "golden-hour"
+    ]
+   },
+   {
+    "phrase": "redwoods in fog, seen from below",
+    "attrs": [
+     "fog",
+     "forest"
+    ]
+   },
+   {
+    "phrase": "a redwood grove with ferns",
+    "attrs": [
+     "forest",
+     "green-meadow"
+    ]
+   }
+  ],
+  "a mossy forest in fog": [
+   {
+    "phrase": "a mossy forest in fog, green and silent",
+    "attrs": [
+     "fog",
+     "forest",
+     "green-meadow"
+    ]
+   },
+   {
+    "phrase": "a moss-covered fallen tree in a misty forest",
+    "attrs": [
+     "fog",
+     "close-up"
+    ]
+   },
+   {
+    "phrase": "a misty forest with soft golden light",
+    "attrs": [
+     "fog",
+     "golden-hour"
+    ]
+   }
+  ],
+  "a weeping willow by a river": [
+   {
+    "phrase": "a weeping willow by a river at sunrise",
+    "attrs": [
+     "golden-hour",
+     "water"
+    ]
+   },
+   {
+    "phrase": "a weeping willow in spring, soft green",
+    "attrs": [
+     "spring",
+     "green-meadow",
+     "pastel"
+    ]
+   },
+   {
+    "phrase": "a weeping willow in fog",
+    "attrs": [
+     "fog",
+     "monochrome"
+    ]
+   }
+  ],
+  "a thunderstorm": [
+   {
+    "phrase": "a thunderstorm over open fields with lightning",
+    "attrs": [
+     "storm",
+     "dramatic-sky"
+    ]
+   },
+   {
+    "phrase": "a dark storm cloud over the sea",
+    "attrs": [
+     "storm",
+     "water",
+     "dramatic-sky"
+    ]
+   },
+   {
+    "phrase": "a supercell storm at sunset",
+    "attrs": [
+     "storm",
+     "golden-hour",
+     "dramatic-sky"
+    ]
+   }
+  ],
+  "a sunset sky": [
+   {
+    "phrase": "a pink and purple sunset sky",
+    "attrs": [
+     "golden-hour",
+     "pastel",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "an orange sunset behind mountains",
+    "attrs": [
+     "golden-hour",
+     "warm-palette"
+    ]
+   },
+   {
+    "phrase": "a sunset sky in silhouette, minimal",
+    "attrs": [
+     "golden-hour",
+     "minimal"
+    ]
+   }
+  ],
+  "a starry night": [
+   {
+    "phrase": "the milky way over mountains",
+    "attrs": [
+     "night",
+     "wide"
+    ]
+   },
+   {
+    "phrase": "a starry sky above a lone tree",
+    "attrs": [
+     "night",
+     "minimal"
+    ]
+   },
+   {
+    "phrase": "star trails over a lake",
+    "attrs": [
+     "night",
+     "water",
+     "reflection"
+    ]
+   }
+  ],
+  "a rainbow": [
+   {
+    "phrase": "a double rainbow over green fields",
+    "attrs": [
+     "green-meadow",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "a rainbow over the sea after a storm",
+    "attrs": [
+     "water",
+     "storm",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "a rainbow in front of dark storm clouds",
+    "attrs": [
+     "dramatic-sky",
+     "vivid"
+    ]
+   }
+  ],
+  "fog over a valley": [
+   {
+    "phrase": "fog filling a valley at sunrise",
+    "attrs": [
+     "fog",
+     "golden-hour"
+    ]
+   },
+   {
+    "phrase": "layers of misty hills in blue tones",
+    "attrs": [
+     "fog",
+     "cool-palette",
+     "minimal"
+    ]
+   },
+   {
+    "phrase": "fog over a forest valley, seen from above",
+    "attrs": [
+     "fog",
+     "aerial",
+     "forest"
+    ]
+   }
+  ],
+  "snowfall": [
+   {
+    "phrase": "heavy snowfall in a quiet street at night",
+    "attrs": [
+     "winter",
+     "night"
+    ]
+   },
+   {
+    "phrase": "snowfall in a pine forest",
+    "attrs": [
+     "winter",
+     "snow",
+     "forest"
+    ]
+   },
+   {
+    "phrase": "soft snowfall in pastel winter light",
+    "attrs": [
+     "winter",
+     "pastel",
+     "minimal"
+    ]
+   }
+  ],
+  "dramatic clouds": [
+   {
+    "phrase": "dramatic storm clouds with rays of light",
+    "attrs": [
+     "dramatic-sky",
+     "storm"
+    ]
+   },
+   {
+    "phrase": "towering cumulus clouds in a blue sky",
+    "attrs": [
+     "vivid",
+     "wide"
+    ]
+   },
+   {
+    "phrase": "low clouds over mountains at sunrise",
+    "attrs": [
+     "golden-hour",
+     "fog"
+    ]
+   }
+  ],
+  "a full moon": [
+   {
+    "phrase": "a full moon rising over the sea",
+    "attrs": [
+     "night",
+     "water"
+    ]
+   },
+   {
+    "phrase": "a full moon behind bare branches",
+    "attrs": [
+     "night",
+     "monochrome",
+     "minimal"
+    ]
+   },
+   {
+    "phrase": "a huge golden moon over mountains",
+    "attrs": [
+     "night",
+     "golden-hour"
+    ]
+   }
+  ],
+  "a tulip field": [
+   {
+    "phrase": "rows of red and yellow tulips under a blue sky",
+    "attrs": [
+     "vivid",
+     "spring",
+     "harsh-sun"
+    ]
+   },
+   {
+    "phrase": "a tulip field at sunrise with mist",
+    "attrs": [
+     "fog",
+     "golden-hour",
+     "spring"
+    ]
+   },
+   {
+    "phrase": "pastel pink and white tulips, close-up",
+    "attrs": [
+     "pastel",
+     "close-up",
+     "spring"
+    ]
+   }
+  ],
+  "a lavender field": [
+   {
+    "phrase": "a lavender field in Provence at golden hour",
+    "attrs": [
+     "golden-hour",
+     "warm-palette"
+    ]
+   },
+   {
+    "phrase": "rows of lavender leading to a farmhouse",
+    "attrs": [
+     "wide",
+     "spring"
+    ]
+   },
+   {
+    "phrase": "lavender close-up with a bee",
+    "attrs": [
+     "close-up",
+     "vivid"
+    ]
+   }
+  ],
+  "cherry blossom": [
+   {
+    "phrase": "cherry blossom along a river, pink petals on the water",
+    "attrs": [
+     "spring",
+     "pastel",
+     "water"
+    ]
+   },
+   {
+    "phrase": "cherry blossom against a blue sky, seen from below",
+    "attrs": [
+     "spring",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "cherry blossom at night with lanterns",
+    "attrs": [
+     "spring",
+     "night"
+    ]
+   }
+  ],
+  "a poppy field": [
+   {
+    "phrase": "a red poppy field at sunset",
+    "attrs": [
+     "golden-hour",
+     "warm-palette",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "poppies and a lone tree in morning mist",
+    "attrs": [
+     "fog",
+     "spring",
+     "minimal"
+    ]
+   },
+   {
+    "phrase": "poppies close-up with soft light",
+    "attrs": [
+     "close-up",
+     "pastel"
+    ]
+   }
+  ],
+  "a sunflower": [
+   {
+    "phrase": "a field of sunflowers under a blue sky",
+    "attrs": [
+     "vivid",
+     "harsh-sun",
+     "wide"
+    ]
+   },
+   {
+    "phrase": "a single sunflower close-up with dew",
+    "attrs": [
+     "close-up"
+    ]
+   },
+   {
+    "phrase": "sunflowers at sunset, silhouette",
+    "attrs": [
+     "golden-hour",
+     "warm-palette"
+    ]
+   }
+  ],
+  "a wildflower meadow": [
+   {
+    "phrase": "a wildflower meadow with mountains behind",
+    "attrs": [
+     "green-meadow",
+     "spring",
+     "wide"
+    ]
+   },
+   {
+    "phrase": "a wildflower meadow in soft morning light",
+    "attrs": [
+     "golden-hour",
+     "pastel"
+    ]
+   },
+   {
+    "phrase": "wildflowers close-up, shallow focus",
+    "attrs": [
+     "close-up",
+     "vivid"
+    ]
+   }
+  ],
+  "an orchid": [
+   {
+    "phrase": "a white orchid in soft window light",
+    "attrs": [
+     "pastel",
+     "minimal",
+     "close-up"
+    ]
+   },
+   {
+    "phrase": "a purple orchid, vivid and glossy",
+    "attrs": [
+     "vivid",
+     "close-up"
+    ]
+   },
+   {
+    "phrase": "orchids in a misty greenhouse",
+    "attrs": [
+     "fog",
+     "forest"
+    ]
+   }
+  ],
+  "a red rose": [
+   {
+    "phrase": "a red rose with dew drops, macro",
+    "attrs": [
+     "close-up",
+     "vivid"
+    ]
+   },
+   {
+    "phrase": "a red rose in dark moody light",
+    "attrs": [
+     "night",
+     "warm-palette"
+    ]
+   },
+   {
+    "phrase": "a garden of red roses in golden light",
+    "attrs": [
+     "golden-hour",
+     "warm-palette"
+    ]
+   }
+  ],
+  "a lotus flower": [
+   {
+    "phrase": "a pink lotus on a still pond at dawn",
+    "attrs": [
+     "water",
+     "golden-hour",
+     "pastel",
+     "reflection"
+    ]
+   },
+   {
+    "phrase": "a lotus flower, close-up with soft petals",
+    "attrs": [
+     "close-up",
+     "pastel"
+    ]
+   },
+   {
+    "phrase": "lotus flowers in mist",
+    "attrs": [
+     "fog",
+     "water"
+    ]
+   }
+  ],
+  "a peony": [
+   {
+    "phrase": "a pink peony, soft and full, close-up",
+    "attrs": [
+     "close-up",
+     "pastel"
+    ]
+   },
+   {
+    "phrase": "a bouquet of white peonies in window light",
+    "attrs": [
+     "pastel",
+     "minimal"
+    ]
+   },
+   {
+    "phrase": "a peony garden in bloom",
+    "attrs": [
+     "spring",
+     "vivid"
+    ]
+   }
+  ]
+ },
+ "generic": [
+  {
+   "phrase": "in warm golden light",
+   "attrs": [
+    "golden-hour",
+    "warm-palette"
+   ]
+  },
+  {
+   "phrase": "in cool, soft, moody light",
+   "attrs": [
+    "overcast",
+    "cool-palette"
+   ]
+  },
+  {
+   "phrase": "in a minimal, pastel, airy composition",
+   "attrs": [
+    "pastel",
+    "minimal"
+   ]
+  }
+ ],
+ "version": 214459535
+}

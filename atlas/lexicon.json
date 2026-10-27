@@ -1,0 +1,277 @@
+{
+ "groups": [
+  {
+   "group": "light",
+   "words": [
+    {
+     "label": "Backlit",
+     "phrase": "backlit with glowing edges"
+    },
+    {
+     "label": "Neon glow",
+     "phrase": "neon lights glowing"
+    },
+    {
+     "label": "Candlelight",
+     "phrase": "warm candlelight"
+    },
+    {
+     "label": "Soft shadows",
+     "phrase": "soft diffused shadows"
+    },
+    {
+     "label": "Rim light",
+     "phrase": "dramatic rim lighting"
+    },
+    {
+     "label": "Sunbeams",
+     "phrase": "beams of sunlight"
+    },
+    {
+     "label": "Moody low light",
+     "phrase": "dark moody low-key lighting"
+    },
+    {
+     "label": "Bright and airy",
+     "phrase": "bright airy high-key light"
+    },
+    {
+     "label": "Studio light",
+     "phrase": "clean studio lighting"
+    },
+    {
+     "label": "Lens flare",
+     "phrase": "lens flare"
+    }
+   ]
+  },
+  {
+   "group": "palette",
+   "words": [
+    {
+     "label": "Teal and orange",
+     "phrase": "teal and orange color grading"
+    },
+    {
+     "label": "Earth tones",
+     "phrase": "earthy brown and ochre tones"
+    },
+    {
+     "label": "Black and white",
+     "phrase": "black and white photograph"
+    },
+    {
+     "label": "Red tones",
+     "phrase": "dominant red tones"
+    },
+    {
+     "label": "Blue tones",
+     "phrase": "dominant blue tones"
+    },
+    {
+     "label": "Green tones",
+     "phrase": "dominant green tones"
+    },
+    {
+     "label": "Yellow tones",
+     "phrase": "dominant yellow tones"
+    },
+    {
+     "label": "Purple tones",
+     "phrase": "dominant purple and violet tones"
+    },
+    {
+     "label": "Pink tones",
+     "phrase": "dominant soft pink tones"
+    },
+    {
+     "label": "Muted colors",
+     "phrase": "muted desaturated colors"
+    },
+    {
+     "label": "Jewel tones",
+     "phrase": "rich jewel tones"
+    },
+    {
+     "label": "Neutral palette",
+     "phrase": "neutral beige and cream palette"
+    }
+   ]
+  },
+  {
+   "group": "composition",
+   "words": [
+    {
+     "label": "Symmetry",
+     "phrase": "perfectly symmetrical composition"
+    },
+    {
+     "label": "Centered subject",
+     "phrase": "subject centered in the frame"
+    },
+    {
+     "label": "Rule of thirds",
+     "phrase": "rule of thirds composition"
+    },
+    {
+     "label": "Shallow depth of field",
+     "phrase": "shallow depth of field with blurred background"
+    },
+    {
+     "label": "Long exposure",
+     "phrase": "long exposure smooth motion"
+    },
+    {
+     "label": "Flat lay",
+     "phrase": "flat lay from directly above"
+    },
+    {
+     "label": "Low angle",
+     "phrase": "low angle looking up"
+    },
+    {
+     "label": "Leading lines",
+     "phrase": "strong leading lines"
+    },
+    {
+     "label": "Negative space",
+     "phrase": "lots of empty negative space"
+    },
+    {
+     "label": "Framed view",
+     "phrase": "subject framed by a natural frame"
+    },
+    {
+     "label": "Repeating pattern",
+     "phrase": "repeating pattern"
+    },
+    {
+     "label": "Tilt-shift miniature",
+     "phrase": "tilt-shift miniature effect"
+    }
+   ]
+  },
+  {
+   "group": "mood",
+   "words": [
+    {
+     "label": "Cozy",
+     "phrase": "cozy and warm atmosphere"
+    },
+    {
+     "label": "Dramatic",
+     "phrase": "dramatic intense atmosphere"
+    },
+    {
+     "label": "Serene",
+     "phrase": "serene peaceful calm atmosphere"
+    },
+    {
+     "label": "Whimsical",
+     "phrase": "whimsical playful fairytale mood"
+    },
+    {
+     "label": "Eerie",
+     "phrase": "eerie mysterious haunting mood"
+    },
+    {
+     "label": "Romantic",
+     "phrase": "romantic soft dreamy mood"
+    },
+    {
+     "label": "Nostalgic",
+     "phrase": "nostalgic vintage mood"
+    },
+    {
+     "label": "Luxurious",
+     "phrase": "luxurious elegant refined mood"
+    },
+    {
+     "label": "Rustic",
+     "phrase": "rustic handmade country feel"
+    },
+    {
+     "label": "Futuristic",
+     "phrase": "futuristic sleek high-tech look"
+    },
+    {
+     "label": "Melancholic",
+     "phrase": "melancholic lonely quiet mood"
+    },
+    {
+     "label": "Joyful",
+     "phrase": "joyful vibrant festive mood"
+    }
+   ]
+  },
+  {
+   "group": "style",
+   "words": [
+    {
+     "label": "Watercolor",
+     "phrase": "watercolor painting style"
+    },
+    {
+     "label": "Oil painting texture",
+     "phrase": "thick oil painting brush strokes"
+    },
+    {
+     "label": "Film grain",
+     "phrase": "analog film grain"
+    },
+    {
+     "label": "Vintage photo",
+     "phrase": "faded vintage photograph"
+    },
+    {
+     "label": "Cinematic",
+     "phrase": "cinematic movie still"
+    },
+    {
+     "label": "High contrast",
+     "phrase": "high contrast"
+    },
+    {
+     "label": "Soft focus",
+     "phrase": "soft dreamy focus"
+    },
+    {
+     "label": "Sharp and detailed",
+     "phrase": "ultra sharp highly detailed"
+    },
+    {
+     "label": "Minimalist",
+     "phrase": "minimalist clean design"
+    },
+    {
+     "label": "Ink drawing",
+     "phrase": "ink line drawing"
+    },
+    {
+     "label": "Pastel chalk",
+     "phrase": "pastel chalk illustration"
+    },
+    {
+     "label": "Impressionist",
+     "phrase": "impressionist painting"
+    },
+    {
+     "label": "Surreal",
+     "phrase": "surreal dreamlike scene"
+    },
+    {
+     "label": "Macro detail",
+     "phrase": "extreme macro detail"
+    },
+    {
+     "label": "Documentary",
+     "phrase": "candid documentary photograph"
+    },
+    {
+     "label": "Glossy",
+     "phrase": "glossy reflective surfaces"
+    }
+   ]
+  }
+ ]
+}

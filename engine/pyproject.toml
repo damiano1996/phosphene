@@ -1,0 +1,34 @@
+[project]
+name = "phosphene-engine"
+version = "0.1.0"
+description = "Local image engine for Phosphene: a localhost server that turns (concept-map position, seed) into an image with the best model your GPU can run."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: POSIX :: Linux", "Intended Audience :: End Users/Desktop", "Topic :: Multimedia :: Graphics"]
+dependencies = ["torch", "diffusers>=0.30", "transformers", "accelerate", "peft", "numpy", "pillow", "safetensors"]
+
+[project.optional-dependencies]
+atlas = ["open_clip_torch", "scikit-learn"]          # only to rebuild the concept map (atlas/build_atlas.py)
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+phosphene-engine = "phosphene_engine.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/phosphene_engine"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 200                      # the code is written in long, dense lines on purpose: a statement and its reason together
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["F", "E9", "B", "SIM115"]    # what is wrong, not how it looks: undefined or unused names, syntax errors, bugbear, files opened without being closed
+ignore = ["B008", "B027"]

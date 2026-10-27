@@ -1,0 +1,79 @@
+{
+  "name": "phosphene-launcher",
+  "productName": "Phosphene",
+  "version": "0.1.0",
+  "description": "Installs and starts Phosphene: a small app that sets up the engine with uv, then opens the page.",
+  "main": "src/main.js",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/damiano1996/phosphene",
+  "author": "Damiano Derin <damiano.derin@gmail.com>",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "download": "node scripts/download-uv.js",
+    "stage": "node scripts/stage.js",
+    "package": "npm run stage && electron-builder",
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "dev.phosphene.launcher",
+    "productName": "Phosphene",
+    "afterPack": "scripts/after-pack.js",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**",
+      "build/icon.png",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "stage/uv",
+        "to": "uv"
+      },
+      {
+        "from": "stage/app",
+        "to": "app"
+      }
+    ],
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Graphics",
+      "icon": "build/icon.png",
+      "maintainer": "Damiano Derin <damiano.derin@gmail.com>"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.png"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ],
+      "category": "public.app-category.graphics-design",
+      "icon": "build/icon.png",
+      "identity": null
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "artifactName": "Phosphene-${os}-${arch}.${ext}"
+  }
+}

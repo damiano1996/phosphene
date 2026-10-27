@@ -1,0 +1,595 @@
+{
+  "models": [
+    {
+      "id": "sd-turbo",
+      "name": "SD-Turbo",
+      "backend": "sdturbo",
+      "available": true,
+      "tagline": "The fastest: one step per image. Plain, direct pictures.",
+      "needs_vram_mb": 3000,
+      "licence": "Stability AI licence (see the model page before any commercial use)",
+      "page": "https://huggingface.co/stabilityai/sd-turbo",
+      "parts": [
+        {
+          "repo": "stabilityai/sd-turbo",
+          "files": [
+            "model_index.json",
+            "scheduler/scheduler_config.json",
+            "tokenizer/merges.txt",
+            "tokenizer/special_tokens_map.json",
+            "tokenizer/tokenizer_config.json",
+            "tokenizer/vocab.json",
+            "text_encoder/config.json",
+            "text_encoder/model.fp16.safetensors",
+            "unet/config.json",
+            "unet/diffusion_pytorch_model.fp16.safetensors",
+            "vae/config.json",
+            "vae/diffusion_pytorch_model.fp16.safetensors"
+          ]
+        },
+        {
+          "repo": "madebyollin/taesd",
+          "files": [
+            "config.json",
+            "diffusion_pytorch_model.safetensors"
+          ]
+        }
+      ],
+      "size_mb": 2592,
+      "params": [
+        {
+          "id": "steps",
+          "label": "Steps",
+          "min": 1,
+          "max": 4,
+          "default": 1,
+          "step": 1,
+          "help": "SD-Turbo is made for 1 step and looks best there. More steps cost time and, measured on this model, tend to look harsher (more contrast, speckled detail), not better."
+        }
+      ]
+    },
+    {
+      "id": "sd15-lcm",
+      "name": "Stable Diffusion 1.5 + LCM",
+      "backend": "lcm",
+      "available": true,
+      "tagline": "Four steps per image: slower, with more detail and variety.",
+      "needs_vram_mb": 3000,
+      "licence": "CreativeML OpenRAIL-M (model) and OpenRAIL++ (LCM-LoRA): use restrictions apply",
+      "page": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "parts": [
+        {
+          "repo": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+          "files": [
+            "model_index.json",
+            "feature_extractor/preprocessor_config.json",
+            "scheduler/scheduler_config.json",
+            "tokenizer/merges.txt",
+            "tokenizer/special_tokens_map.json",
+            "tokenizer/tokenizer_config.json",
+            "tokenizer/vocab.json",
+            "text_encoder/config.json",
+            "text_encoder/model.fp16.safetensors",
+            "unet/config.json",
+            "unet/diffusion_pytorch_model.fp16.safetensors",
+            "vae/config.json",
+            "vae/diffusion_pytorch_model.fp16.safetensors"
+          ]
+        },
+        {
+          "repo": "latent-consistency/lcm-lora-sdv1-5",
+          "files": [
+            "pytorch_lora_weights.safetensors"
+          ]
+        },
+        {
+          "repo": "madebyollin/taesd",
+          "files": [
+            "config.json",
+            "diffusion_pytorch_model.safetensors"
+          ]
+        }
+      ],
+      "size_mb": 2277,
+      "params": [
+        {
+          "id": "steps",
+          "label": "Steps",
+          "min": 1,
+          "max": 8,
+          "default": 4,
+          "step": 1,
+          "help": "Best: 4. Measured here: 1 step is blurry, 2 is soft, 4 is sharp and natural, 6 and 8 add only a little more detail for 30 to 50 percent more time."
+        },
+        {
+          "id": "guidance",
+          "label": "Guidance",
+          "min": 1.0,
+          "max": 2.0,
+          "default": 1.0,
+          "step": 0.1,
+          "help": "Best: 1.0. Higher values (1.5 and up) made pictures flatter and more contrasty in the test, and cost time."
+        }
+      ]
+    },
+    {
+      "id": "sdxs-512",
+      "name": "SDXS-512 DreamShaper",
+      "backend": "sd-generic",
+      "available": true,
+      "tagline": "The lightest: one step and only about 1 GB of GPU memory. Illustrated, saturated look.",
+      "needs_vram_mb": 1500,
+      "licence": "OpenRAIL++ (use restrictions apply)",
+      "page": "https://huggingface.co/IDKiro/sdxs-512-dreamshaper",
+      "repo": "IDKiro/sdxs-512-dreamshaper",
+      "variant": null,
+      "size_mb": 1800,
+      "params": [
+        {
+          "id": "steps",
+          "label": "Steps",
+          "min": 1,
+          "max": 4,
+          "default": 1,
+          "step": 1,
+          "help": "Best: 1. It is trained for a single step."
+        },
+        {
+          "id": "guidance",
+          "label": "Guidance",
+          "min": 0.0,
+          "max": 2.0,
+          "default": 0.0,
+          "step": 0.5,
+          "help": "Best: 0. It was trained without guidance."
+        }
+      ],
+      "parts": [
+        {
+          "repo": "IDKiro/sdxs-512-dreamshaper",
+          "files": [
+            "model_index.json",
+            "scheduler/scheduler_config.json",
+            "text_encoder/config.json",
+            "unet/config.json",
+            "vae/config.json",
+            "tokenizer/merges.txt",
+            "tokenizer/vocab.json",
+            "tokenizer/special_tokens_map.json",
+            "tokenizer/tokenizer_config.json",
+            "feature_extractor/preprocessor_config.json",
+            "text_encoder/model.safetensors",
+            "unet/diffusion_pytorch_model.safetensors",
+            "vae/diffusion_pytorch_model.safetensors"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sdxl-turbo",
+      "name": "SDXL-Turbo",
+      "backend": "sdxl",
+      "available": true,
+      "tagline": "Sharp, natural pictures in one step. A big step up in quality for about 7 GB of disk.",
+      "needs_vram_mb": 3400,
+      "licence": "Stability AI licence (see the model page before any commercial use)",
+      "page": "https://huggingface.co/stabilityai/sdxl-turbo",
+      "repo": "stabilityai/sdxl-turbo",
+      "size_mb": 6970,
+      "params": [
+        {
+          "id": "steps",
+          "label": "Steps",
+          "min": 1,
+          "max": 4,
+          "default": 1,
+          "step": 1,
+          "help": "Best: 1. It is made for one step; 2 adds a little detail for double the time."
+        },
+        {
+          "id": "guidance",
+          "label": "Guidance",
+          "min": 0.0,
+          "max": 1.0,
+          "default": 0.0,
+          "step": 0.5,
+          "help": "Best: 0. It was trained without guidance."
+        }
+      ],
+      "parts": [
+        {
+          "repo": "stabilityai/sdxl-turbo",
+          "files": [
+            "model_index.json",
+            "scheduler/scheduler_config.json",
+            "text_encoder/config.json",
+            "text_encoder/model.fp16.safetensors",
+            "text_encoder_2/config.json",
+            "text_encoder_2/model.fp16.safetensors",
+            "tokenizer/merges.txt",
+            "tokenizer/special_tokens_map.json",
+            "tokenizer/tokenizer_config.json",
+            "tokenizer/vocab.json",
+            "tokenizer_2/merges.txt",
+            "tokenizer_2/special_tokens_map.json",
+            "tokenizer_2/tokenizer_config.json",
+            "tokenizer_2/vocab.json",
+            "unet/config.json",
+            "unet/diffusion_pytorch_model.fp16.safetensors",
+            "vae/config.json",
+            "vae/diffusion_pytorch_model.fp16.safetensors"
+          ]
+        },
+        {
+          "repo": "madebyollin/sdxl-vae-fp16-fix",
+          "files": [
+            "config.json",
+            "diffusion_pytorch_model.safetensors"
+          ]
+        },
+        {
+          "repo": "madebyollin/taesdxl",
+          "files": [
+            "config.json",
+            "diffusion_pytorch_model.safetensors"
+          ]
+        }
+      ],
+      "min_size": 512
+    },
+    {
+      "id": "realvisxl-lightning",
+      "name": "RealVisXL V5 Lightning",
+      "backend": "sdxl",
+      "available": true,
+      "tagline": "The most photographic: natural light, skin, food and objects. Five steps.",
+      "needs_vram_mb": 3400,
+      "licence": "OpenRAIL++ (use restrictions apply)",
+      "page": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning",
+      "repo": "SG161222/RealVisXL_V5.0_Lightning",
+      "size_mb": 6971,
+      "params": [
+        {
+          "id": "steps",
+          "label": "Steps",
+          "min": 3,
+          "max": 8,
+          "default": 5,
+          "step": 1,
+          "help": "Best: 5. Fewer is softer; more adds little."
+        },
+        {
+          "id": "guidance",
+          "label": "Guidance",
+          "min": 1.0,
+          "max": 3.0,
+          "default": 1.0,
+          "step": 0.5,
+          "help": "Best: 1.0 for speed. 2.0 is a little richer and takes about 70% longer."
+        }
+      ],
+      "parts": [
+        {
+          "repo": "SG161222/RealVisXL_V5.0_Lightning",
+          "files": [
+            "model_index.json",
+            "scheduler/scheduler_config.json",
+            "text_encoder/config.json",
+            "text_encoder/model.fp16.safetensors",
+            "text_encoder_2/config.json",
+            "text_encoder_2/model.fp16.safetensors",
+            "tokenizer/merges.txt",
+            "tokenizer/special_tokens_map.json",
+            "tokenizer/tokenizer_config.json",
+            "tokenizer/vocab.json",
+            "tokenizer_2/merges.txt",
+            "tokenizer_2/special_tokens_map.json",
+            "tokenizer_2/tokenizer_config.json",
+            "tokenizer_2/vocab.json",
+            "unet/config.json",
+            "unet/diffusion_pytorch_model.fp16.safetensors",
+            "unet/diffusion_pytorch_model.safetensors.index.json",
+            "vae/config.json",
+            "vae/diffusion_pytorch_model.fp16.safetensors"
+          ]
+        },
+        {
+          "repo": "madebyollin/sdxl-vae-fp16-fix",
+          "files": [
+            "config.json",
+            "diffusion_pytorch_model.safetensors"
+          ]
+        },
+        {
+          "repo": "madebyollin/taesdxl",
+          "files": [
+            "config.json",
+            "diffusion_pytorch_model.safetensors"
+          ]
+        }
+      ],
+      "min_size": 512
+    },
+    {
+      "id": "dreamshaperxl-lightning",
+      "name": "DreamShaper XL Lightning",
+      "backend": "sdxl",
+      "available": true,
+      "tagline": "Painterly and rich, between photo and illustration. Four steps.",
+      "needs_vram_mb": 3400,
+      "licence": "OpenRAIL++ (use restrictions apply)",
+      "page": "https://huggingface.co/Lykon/dreamshaper-xl-lightning",
+      "repo": "Lykon/dreamshaper-xl-lightning",
+      "size_mb": 6970,
+      "params": [
+        {
+          "id": "steps",
+          "label": "Steps",
+          "min": 3,
+          "max": 8,
+          "default": 4,
+          "step": 1,
+          "help": "Best: 4."
+        },
+        {
+          "id": "guidance",
+          "label": "Guidance",
+          "min": 1.0,
+          "max": 3.0,
+          "default": 1.0,
+          "step": 0.5,
+          "help": "Best: 1.0 for speed; 2.0 changes little and takes about 70% longer."
+        }
+      ],
+      "parts": [
+        {
+          "repo": "Lykon/dreamshaper-xl-lightning",
+          "files": [
+            "model_index.json",
+            "scheduler/scheduler_config.json",
+            "text_encoder/config.json",
+            "text_encoder/model.fp16.safetensors",
+            "text_encoder_2/config.json",
+            "text_encoder_2/model.fp16.safetensors",
+            "tokenizer/merges.txt",
+            "tokenizer/special_tokens_map.json",
+            "tokenizer/tokenizer_config.json",
+            "tokenizer/vocab.json",
+            "tokenizer_2/merges.txt",
+            "tokenizer_2/special_tokens_map.json",
+            "tokenizer_2/tokenizer_config.json",
+            "tokenizer_2/vocab.json",
+            "unet/config.json",
+            "unet/diffusion_pytorch_model.fp16.safetensors",
+            "vae/config.json",
+            "vae/diffusion_pytorch_model.fp16.safetensors"
+          ]
+        },
+        {
+          "repo": "madebyollin/sdxl-vae-fp16-fix",
+          "files": [
+            "config.json",
+            "diffusion_pytorch_model.safetensors"
+          ]
+        },
+        {
+          "repo": "madebyollin/taesdxl",
+          "files": [
+            "config.json",
+            "diffusion_pytorch_model.safetensors"
+          ]
+        }
+      ],
+      "min_size": 512
+    },
+    {
+      "id": "sana-sprint",
+      "name": "SANA Sprint 1.6B",
+      "backend": "sana",
+      "available": true,
+      "tagline": "In between: clearly sharper and richer than the small models, and nearly as quick. Light, glow and fine detail hold up; best at 768 px and above.",
+      "needs_vram_mb": 2800,
+      "needs_ram_mb": 8000,
+      "min_size": 768,
+      "size_mb": 9700,
+      "licence": "Apache 2.0 (its text encoder, Gemma, has its own terms of use)",
+      "page": "https://huggingface.co/Efficient-Large-Model/Sana_Sprint_1.6B_1024px_diffusers",
+      "speed": "about 1 to 2 seconds a picture; the first time, a minute or two to prepare the prompts",
+      "repo": "Efficient-Large-Model/Sana_Sprint_1.6B_1024px_diffusers",
+      "params": [
+        {
+          "id": "steps",
+          "label": "Steps",
+          "min": 1,
+          "max": 2,
+          "default": 2,
+          "step": 1,
+          "help": "Best: 2. It is made for 1 or 2 steps; 1 is quicker and a little softer."
+        }
+      ],
+      "parts": [
+        {
+          "repo": "Efficient-Large-Model/Sana_Sprint_1.6B_1024px_diffusers",
+          "files": [
+            "model_index.json",
+            "scheduler/scheduler_config.json",
+            "text_encoder/config.json",
+            "text_encoder/model-00001-of-00002.safetensors",
+            "text_encoder/model-00002-of-00002.safetensors",
+            "text_encoder/model.safetensors.index.json",
+            "tokenizer/special_tokens_map.json",
+            "tokenizer/tokenizer.json",
+            "tokenizer/tokenizer.model",
+            "tokenizer/tokenizer_config.json",
+            "transformer/config.json",
+            "transformer/diffusion_pytorch_model.safetensors",
+            "vae/config.json",
+            "vae/diffusion_pytorch_model.safetensors"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flux-schnell",
+      "name": "FLUX.1 schnell",
+      "backend": "flux",
+      "available": true,
+      "tagline": "Professional quality: sharp photographs, natural light, readable detail, hands and faces that hold up. Slow: about 9 seconds a picture.",
+      "needs_vram_mb": 2300,
+      "needs_ram_mb": 12000,
+      "min_size": 512,
+      "size_mb": 16900,
+      "licence": "Apache 2.0",
+      "page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+      "speed": "about 9 s a picture at 512 px (4 steps), 18 s at 768 px; the first time, 5 to 10 minutes to prepare the prompts",
+      "repo": "unsloth/FLUX.1-schnell",
+      "gguf_repo": "city96/FLUX.1-schnell-gguf",
+      "gguf_file": "flux1-schnell-Q4_K_S.gguf",
+      "params": [
+        {
+          "id": "steps",
+          "label": "Steps",
+          "min": 1,
+          "max": 8,
+          "default": 4,
+          "step": 1,
+          "help": "Best: 4. It is made for 4 steps; 1 or 2 are fast and soft, more than 4 adds little."
+        }
+      ],
+      "parts": [
+        {
+          "repo": "unsloth/FLUX.1-schnell",
+          "files": [
+            "model_index.json",
+            "scheduler/scheduler_config.json",
+            "text_encoder/config.json",
+            "text_encoder/model.safetensors",
+            "text_encoder_2/config.json",
+            "text_encoder_2/model-00001-of-00002.safetensors",
+            "text_encoder_2/model-00002-of-00002.safetensors",
+            "text_encoder_2/model.safetensors.index.json",
+            "tokenizer/merges.txt",
+            "tokenizer/special_tokens_map.json",
+            "tokenizer/tokenizer_config.json",
+            "tokenizer/vocab.json",
+            "tokenizer_2/special_tokens_map.json",
+            "tokenizer_2/spiece.model",
+            "tokenizer_2/tokenizer.json",
+            "tokenizer_2/tokenizer_config.json",
+            "transformer/config.json",
+            "vae/config.json",
+            "vae/diffusion_pytorch_model.safetensors"
+          ]
+        },
+        {
+          "repo": "city96/FLUX.1-schnell-gguf",
+          "files": [
+            "flux1-schnell-Q4_K_S.gguf"
+          ]
+        }
+      ],
+      "encode_note": "Preparing the concept prompts (first time only: 5 to 10 minutes, the text model is large)"
+    },
+    {
+      "id": "clip-tags",
+      "kind": "captioner",
+      "mode": "tags",
+      "name": "CLIP tags",
+      "backend": "captioner",
+      "available": true,
+      "tagline": "Scores every picture against 37 words about style, light, colour, composition and mood. Tiny and fast: fine for every picture, on a graphics card or a processor.",
+      "needs_vram_mb": 700,
+      "needs_ram_mb": 1500,
+      "licence": "MIT",
+      "page": "https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+      "repo": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+      "size_mb": 606,
+      "speed": "about 0.02 s a picture on a graphics card, 0.1 s on a processor",
+      "parts": [
+        {
+          "repo": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+          "files": [
+            "config.json",
+            "merges.txt",
+            "model.safetensors",
+            "preprocessor_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smolvlm-256m",
+      "kind": "captioner",
+      "mode": "caption",
+      "name": "SmolVLM 256M",
+      "backend": "captioner",
+      "available": true,
+      "tagline": "Writes a short description of a picture and reads style, light and colour from it. The smallest model that does it well.",
+      "needs_vram_mb": 1100,
+      "needs_ram_mb": 2200,
+      "licence": "Apache 2.0",
+      "page": "https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct",
+      "repo": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "size_mb": 515,
+      "speed": "about 1 s a picture on a graphics card, several seconds on a processor",
+      "parts": [
+        {
+          "repo": "HuggingFaceTB/SmolVLM-256M-Instruct",
+          "files": [
+            "added_tokens.json",
+            "chat_template.json",
+            "config.json",
+            "generation_config.json",
+            "merges.txt",
+            "model.safetensors",
+            "preprocessor_config.json",
+            "processor_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smolvlm-500m",
+      "kind": "captioner",
+      "mode": "caption",
+      "name": "SmolVLM 500M",
+      "backend": "captioner",
+      "available": true,
+      "tagline": "The same, a bit more accurate, twice the size.",
+      "needs_vram_mb": 1700,
+      "needs_ram_mb": 3500,
+      "licence": "Apache 2.0",
+      "page": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct",
+      "repo": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "size_mb": 1017,
+      "speed": "about 1.5 s a picture on a graphics card, 10 s on a processor",
+      "parts": [
+        {
+          "repo": "HuggingFaceTB/SmolVLM-500M-Instruct",
+          "files": [
+            "added_tokens.json",
+            "chat_template.json",
+            "config.json",
+            "generation_config.json",
+            "merges.txt",
+            "model.safetensors",
+            "preprocessor_config.json",
+            "processor_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

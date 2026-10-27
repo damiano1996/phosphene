@@ -1,0 +1,21 @@
+{
+ "templates": [
+  "a photo of {}",
+  "a detailed close-up photo of {}",
+  "a painting of {}"
+ ],
+ "templates_not_photo": [
+  "{}",
+  "{}, detailed",
+  "{}, artwork"
+ ],
+ "not_photo": [
+  "art and pattern",
+  "fantasy and sci-fi",
+  "illustration and graphic design",
+  "microscopic and cosmic",
+  "painting and drawing",
+  "paper and lettering",
+  "textures"
+ ]
+}

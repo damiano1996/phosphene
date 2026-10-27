@@ -1,0 +1,436 @@
+{
+ "groups": [
+  {
+   "group": "style",
+   "tags": [
+    {
+     "id": "photo",
+     "label": "Photograph",
+     "prompt": "a photograph",
+     "words": [
+      "photo",
+      "photograph"
+     ]
+    },
+    {
+     "id": "painting",
+     "label": "Painting",
+     "prompt": "a painting",
+     "words": [
+      "painting",
+      "painted",
+      "oil"
+     ]
+    },
+    {
+     "id": "illustration",
+     "label": "Illustration",
+     "prompt": "a digital illustration",
+     "words": [
+      "illustration",
+      "illustrated",
+      "cartoon",
+      "drawing"
+     ]
+    },
+    {
+     "id": "render",
+     "label": "3D render",
+     "prompt": "a 3d render",
+     "words": [
+      "render",
+      "3d",
+      "cgi"
+     ]
+    },
+    {
+     "id": "sketch",
+     "label": "Sketch",
+     "prompt": "a pencil sketch",
+     "words": [
+      "sketch",
+      "pencil",
+      "line drawing"
+     ]
+    },
+    {
+     "id": "watercolor",
+     "label": "Watercolour",
+     "prompt": "a watercolor painting",
+     "words": [
+      "watercolor",
+      "watercolour"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "light",
+   "tags": [
+    {
+     "id": "soft_light",
+     "label": "Soft light",
+     "prompt": "soft natural light",
+     "words": [
+      "soft light",
+      "natural light",
+      "diffused",
+      "gentle light"
+     ]
+    },
+    {
+     "id": "dramatic",
+     "label": "Dramatic light",
+     "prompt": "dramatic lighting with strong shadows",
+     "words": [
+      "dramatic",
+      "shadows",
+      "chiaroscuro",
+      "spotlight"
+     ]
+    },
+    {
+     "id": "golden",
+     "label": "Golden hour",
+     "prompt": "golden hour warm sunlight",
+     "words": [
+      "golden",
+      "sunset",
+      "sunrise",
+      "sunlight",
+      "warm light"
+     ]
+    },
+    {
+     "id": "neon",
+     "label": "Neon",
+     "prompt": "neon lights at night",
+     "words": [
+      "neon",
+      "night",
+      "glowing"
+     ]
+    },
+    {
+     "id": "dark_moody",
+     "label": "Dark and moody",
+     "prompt": "a dark moody scene",
+     "words": [
+      "dark",
+      "moody",
+      "dim",
+      "gloomy"
+     ]
+    },
+    {
+     "id": "bright_airy",
+     "label": "Bright and airy",
+     "prompt": "a bright airy scene",
+     "words": [
+      "bright",
+      "airy",
+      "sunny",
+      "white background"
+     ]
+    },
+    {
+     "id": "studio",
+     "label": "Studio light",
+     "prompt": "studio lighting",
+     "words": [
+      "studio",
+      "product shot"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "colour",
+   "tags": [
+    {
+     "id": "warm",
+     "label": "Warm colours",
+     "prompt": "warm colors",
+     "words": [
+      "warm",
+      "orange",
+      "red",
+      "yellow"
+     ]
+    },
+    {
+     "id": "cool",
+     "label": "Cool colours",
+     "prompt": "cool blue colors",
+     "words": [
+      "cool",
+      "blue",
+      "teal",
+      "cyan"
+     ]
+    },
+    {
+     "id": "pastel",
+     "label": "Pastel",
+     "prompt": "soft pastel colors",
+     "words": [
+      "pastel",
+      "soft pink",
+      "light pink",
+      "lavender"
+     ]
+    },
+    {
+     "id": "vivid",
+     "label": "Vivid colours",
+     "prompt": "vibrant saturated colors",
+     "words": [
+      "vibrant",
+      "colorful",
+      "colourful",
+      "saturated",
+      "bright colors"
+     ]
+    },
+    {
+     "id": "mono",
+     "label": "Black and white",
+     "prompt": "a black and white image",
+     "words": [
+      "black and white",
+      "monochrome",
+      "grayscale",
+      "greyscale"
+     ]
+    },
+    {
+     "id": "earthy",
+     "label": "Earth tones",
+     "prompt": "earth tones, brown and beige",
+     "words": [
+      "brown",
+      "beige",
+      "earth",
+      "tan",
+      "wooden"
+     ]
+    },
+    {
+     "id": "muted",
+     "label": "Muted colours",
+     "prompt": "muted desaturated colors",
+     "words": [
+      "muted",
+      "faded",
+      "desaturated",
+      "grey",
+      "gray"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "composition",
+   "tags": [
+    {
+     "id": "closeup",
+     "label": "Close-up",
+     "prompt": "a close-up",
+     "words": [
+      "close-up",
+      "close up",
+      "macro",
+      "detail of"
+     ]
+    },
+    {
+     "id": "wide",
+     "label": "Wide shot",
+     "prompt": "a wide shot",
+     "words": [
+      "wide",
+      "landscape",
+      "panorama",
+      "scene of"
+     ]
+    },
+    {
+     "id": "symmetric",
+     "label": "Symmetry",
+     "prompt": "a symmetrical composition",
+     "words": [
+      "symmetr"
+     ]
+    },
+    {
+     "id": "minimal",
+     "label": "Minimal",
+     "prompt": "a minimalist composition with empty space",
+     "words": [
+      "minimal",
+      "simple",
+      "empty",
+      "clean"
+     ]
+    },
+    {
+     "id": "busy",
+     "label": "Busy scene",
+     "prompt": "a busy cluttered scene",
+     "words": [
+      "busy",
+      "cluttered",
+      "crowded",
+      "many"
+     ]
+    },
+    {
+     "id": "centered",
+     "label": "Centred subject",
+     "prompt": "a single subject in the center",
+     "words": [
+      "center",
+      "centre",
+      "single",
+      "portrait of"
+     ]
+    },
+    {
+     "id": "bokeh",
+     "label": "Blurred background",
+     "prompt": "shallow depth of field with blurred background",
+     "words": [
+      "blur",
+      "bokeh",
+      "depth of field",
+      "out of focus"
+     ]
+    },
+    {
+     "id": "aerial",
+     "label": "From above",
+     "prompt": "an aerial view from above",
+     "words": [
+      "aerial",
+      "from above",
+      "top view",
+      "overhead",
+      "bird"
+     ]
+    },
+    {
+     "id": "pattern",
+     "label": "Pattern",
+     "prompt": "a repeating pattern",
+     "words": [
+      "pattern",
+      "repeating",
+      "tiles",
+      "texture of"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "mood",
+   "tags": [
+    {
+     "id": "calm",
+     "label": "Calm",
+     "prompt": "a calm peaceful mood",
+     "words": [
+      "calm",
+      "peaceful",
+      "serene",
+      "quiet",
+      "tranquil"
+     ]
+    },
+    {
+     "id": "energetic",
+     "label": "Energetic",
+     "prompt": "an energetic dynamic scene",
+     "words": [
+      "energetic",
+      "dynamic",
+      "action",
+      "motion",
+      "jumping",
+      "running"
+     ]
+    },
+    {
+     "id": "elegant",
+     "label": "Elegant",
+     "prompt": "an elegant luxurious look",
+     "words": [
+      "elegant",
+      "luxur",
+      "fancy",
+      "refined"
+     ]
+    },
+    {
+     "id": "vintage",
+     "label": "Vintage",
+     "prompt": "a vintage retro look",
+     "words": [
+      "vintage",
+      "retro",
+      "old",
+      "antique",
+      "aged"
+     ]
+    },
+    {
+     "id": "rustic",
+     "label": "Rustic",
+     "prompt": "a rustic handmade look",
+     "words": [
+      "rustic",
+      "handmade",
+      "handcrafted",
+      "weathered wood",
+      "farmhouse"
+     ]
+    },
+    {
+     "id": "futuristic",
+     "label": "Futuristic",
+     "prompt": "a futuristic look",
+     "words": [
+      "futuristic",
+      "sci-fi",
+      "science fiction",
+      "cyber",
+      "space"
+     ]
+    },
+    {
+     "id": "dreamy",
+     "label": "Dreamy",
+     "prompt": "a dreamy ethereal look",
+     "words": [
+      "dreamy",
+      "ethereal",
+      "fantasy",
+      "magical",
+      "surreal"
+     ]
+    },
+    {
+     "id": "gritty",
+     "label": "Gritty",
+     "prompt": "a gritty weathered look",
+     "words": [
+      "gritty",
+      "rust",
+      "grunge",
+      "worn",
+      "dirty"
+     ]
+    }
+   ]
+  }
+ ]
+}
