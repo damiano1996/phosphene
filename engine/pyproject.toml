@@ -1,6 +1,6 @@
 [project]
 name = "phosphene-engine"
-version = "0.1.0"
+version = "0.1.1"
 description = "Local image engine for Phosphene: a localhost server that turns (concept-map position, seed) into an image with the best model your GPU can run."
 readme = "README.md"
 license = "Apache-2.0"
