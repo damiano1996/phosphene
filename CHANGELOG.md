@@ -1,8 +1,14 @@
 # Changelog
 
-All notable changes. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); there is no numbered release yet.
+All notable changes. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## Unreleased
+## 0.1.1
+
+### Fixed
+- Models drawn by the SDXL backend no longer draw blocky, mosaic-like pictures (measured on SDXL-Turbo; RealVisXL and DreamShaper XL use the same code): the UNet's input and output layers and its time and size embeddings stay in 16-bit
+  while the rest is held in 8-bit floats. Same speed and memory on a 4 GB card.
+
+## 0.1.0
 
 First public state of the project.
 

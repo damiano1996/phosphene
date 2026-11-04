@@ -1,7 +1,7 @@
 {
   "name": "phosphene-launcher",
   "productName": "Phosphene",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Installs and starts Phosphene: a small app that sets up the engine with uv, then opens the page.",
   "main": "src/main.js",
   "license": "Apache-2.0",
