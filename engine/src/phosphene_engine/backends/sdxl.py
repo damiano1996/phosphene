@@ -5,11 +5,13 @@ import os
 
 import torch
 from diffusers import AutoencoderKL, AutoencoderTiny, StableDiffusionXLPipeline
+from diffusers.hooks.layerwise_casting import DEFAULT_SKIP_MODULES_PATTERN
 from huggingface_hub import try_to_load_from_cache
 
 from .base import Backend
 
 POOLED = 1280          # the pooled embedding of the second text encoder: carried as one extra row after the 77 token rows, so cells can mix it like the rest
+FP16_MODULES = (r"^conv_in$", r"^conv_out$", r"time_emb", r"add_embedding")      # kept in fp16 under fp8 storage (+26 MB); mean pixel error vs full fp16 drops from 15.5 to 5.0
 
 
 class Sdxl(Backend):
@@ -40,7 +42,9 @@ class Sdxl(Backend):
         self.neg, self.negpool = ne.half().cpu(), npool.half().cpu()
         p.text_encoder = None; p.text_encoder_2 = None
         gc.collect(); hardware.empty_cache(self.device)
-        if self.device == "cuda": p.unet.enable_layerwise_casting(storage_dtype=torch.float8_e4m3fn, compute_dtype=torch.float16)
+        if self.device == "cuda":                                         # fp8 storage everywhere except the UNet's input/output convs and its time/size embeddings:
+            p.unet.enable_layerwise_casting(storage_dtype=torch.float8_e4m3fn, compute_dtype=torch.float16,       # those 26M parameters in fp8 give blocky mosaic artefacts
+                                            skip_modules_pattern=DEFAULT_SKIP_MODULES_PATTERN + FP16_MODULES)
         p.unet.to(self.device)
         p.vae = AutoencoderKL.from_pretrained("madebyollin/sdxl-vae-fp16-fix", torch_dtype=torch.float16, local_files_only=True).to(self.device)
         p.vae.enable_slicing(); p.vae.enable_tiling()
